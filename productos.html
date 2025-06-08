@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Dulce Tentación</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Mismo que en home) -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://i.postimg.cc/WpwHTFSN/logo-dulceria.png" alt="Dulce Tentación" width="120">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-search animate__animated animate__pulse animate__infinite"></i>
+                <i class="fas fa-shopping-cart animate__animated animate__swing animate__infinite"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Productos) -->
+    <section class="hero hero-products">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Nuestros Productos</h1>
+            <p class="animate__animated animate__fadeInUp">Sabores auténticos de la repostería peruana</p>
+        </div>
+    </section>
+
+    <!-- Subcategorías -->
+    <section class="subcategories">
+        <div class="container">
+            <div class="subcategory-tabs">
+                <a href="#pasteles" class="tab active">Pasteles</a>
+                <a href="#individuales" class="tab">Postres Individuales</a>
+                <a href="#saludables" class="tab">Saludables</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pasteles -->
+    <section id="pasteles" class="product-section">
+        <div class="container">
+            <h2>Pasteles Tradicionales</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/pastel-coco-placa_1339-7096.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Torta Tres Leches">
+                    <h3>Torta Tres Leches</h3>
+                    <p>Clásico peruano con leche evaporada, condensada y crema.</p>
+                    <span class="price">S/ 48.00</span>
+                    <button class="btn-add" onclick="addToCart('Torta Tres Leches')">Añadir al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/primer-plano-sabrosa-tarta-chocolate-trozos-chocolate-bandeja-hornear_1220-6329.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Torta de Chocolate">
+                    <h3>Torta de Chocolate</h3>
+                    <p>Con cacao peruano y relleno de mousse de frutas.</p>
+                    <span class="price">S/ 52.00</span>
+                    <button class="btn-add" onclick="addToCart('Torta de Chocolate')">Añadir al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/tarta-queso-amarilla-crema-mantequilla_140725-1968.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Torta de Lucuma">
+                    <h3>Torta de Lúcuma</h3>
+                    <p>El sabor único de la lúcuma peruana en un pastel esponjoso.</p>
+                    <span class="price">S/ 55.00</span>
+                    <button class="btn-add" onclick="addToCart('Torta de Lúcuma')">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Postres Individuales -->
+    <section id="individuales" class="product-section" style="display:none;">
+        <div class="container">
+            <h2>Postres Individuales</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/vista-frontal-elicious-alfajores-cookies_23-2148751746.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Alfajores">
+                    <h3>Alfajores Peruanos</h3>
+                    <p>Rellenos de manjar blanco y espolvoreados con azúcar flor.</p>
+                    <span class="price">S/ 12.00 (x6)</span>
+                    <button class="btn-add" onclick="addToCart('Alfajores Peruanos')">Añadir al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/arreglo-delicioso-aros-cebolla_23-2149235942.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Picarones">
+                    <h3>Picarones</h3>
+                    <p>Anillos fritos de camote y zapallo, bañados en miel de chancaca.</p>
+                    <span class="price">S/ 15.00 (x4)</span>
+                    <button class="btn-add" onclick="addToCart('Picarones')">Añadir al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/plato-postre-dulce-frijoles-negros_1150-35533.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Mazamorra Morada">
+                    <h3>Mazamorra Morada</h3>
+                    <p>Postre de maíz morado con frutas y canela.</p>
+                    <span class="price">S/ 8.00</span>
+                    <button class="btn-add" onclick="addToCart('Mazamorra Morada')">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Saludables -->
+    <section id="saludables" class="product-section" style="display:none;">
+        <div class="container">
+            <h2>Opciónes Saludables</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/pedazo-pastel-pan-platano-nuez_661915-569.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Queque de Quinoa">
+                    <h3>Queque de Quinoa</h3>
+                    <p>Sin azúcar refinada, endulzado con miel de abeja.</p>
+                    <span class="price">S/ 35.00</span>
+                    <button class="btn-add" onclick="addToCart('Queque de Quinoa')">Añadir al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/piramide-cereal-forma-corazon_23-2148258694.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Galletas de Avena">
+                    <h3>Galletas de Avena</h3>
+                    <p>Con chía y pasas, bajas en calorías.</p>
+                    <span class="price">S/ 10.00 (x6)</span>
+                    <button class="btn-add" onclick="addToCart('Galletas de Avena')">Añadir al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/naturaleza-muerta-taza-postre-acai-brasileno_23-2150168772.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Mousse de Aguaymanto">
+                    <h3>Mousse de Aguaymanto</h3>
+                    <p>Postre sin lactosa, rico en antioxidantes.</p>
+                    <span class="price">S/ 18.00</span>
+                    <button class="btn-add" onclick="addToCart('Mousse de Aguaymanto')">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Mismo que en home) -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="https://i.postimg.cc/WpwHTFSN/logo-dulceria.png" alt="Dulce Tentación" width="100">
+                    <p>Postres artesanales con amor y tradición peruana.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Lima, Perú</p>
+                    <p><i class="fas fa-phone"></i> +51 987 654 321</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Dulce Tentación. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Cambiar entre subcategorías
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                // Ocultar todas las secciones
+                document.querySelectorAll('.product-section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+                // Mostrar la sección seleccionada
+                const target = tab.getAttribute('href').substring(1);
+                document.getElementById(target).style.display = 'block';
+            });
+        });
+
+        // SweetAlert2 para el carrito
+        function addToCart(productName) {
+            Swal.fire({
+                title: '¡Añadido al carrito!',
+                text: `${productName} se ha añadido correctamente.`,
+                icon: 'success',
+                confirmButtonColor: '#d34123',
+                confirmButtonText: 'Continuar comprando'
+            });
+        }
+    </script>
+</body>
+</html>

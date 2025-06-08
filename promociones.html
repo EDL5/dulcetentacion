@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones | Dulce Tentación</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Mismo que en home) -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://i.postimg.cc/WpwHTFSN/logo-dulceria.png" alt="Dulce Tentación" width="120">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-search animate__animated animate__pulse animate__infinite"></i>
+                <i class="fas fa-shopping-cart animate__animated animate__swing animate__infinite"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Promociones) -->
+    <section class="hero hero-promo">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Promociones Especiales</h1>
+            <p class="animate__animated animate__fadeInUp">Aprovecha nuestros descuentos por tiempo limitado</p>
+        </div>
+    </section>
+
+    <!-- Promociones -->
+    <section class="promotions">
+        <div class="container">
+            <div class="grid">
+                <div class="promo-card animate__animated animate__fadeInLeft">
+                    <div class="promo-badge">-20%</div>
+                    <img src="https://img.freepik.com/fotos-premium/primer-plano-cupcakes-mesa_1048944-6311309.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Promo 1">
+                    <div class="promo-details">
+                        <h3>Combo Familiar</h3>
+                        <p>Torta de Chocolate + 6 alfajores + 2 mazamorras.</p>
+                        <div class="price">
+                            <span class="old-price">S/ 85.00</span>
+                            <span class="new-price">S/ 68.00</span>
+                        </div>
+                        <button class="btn" onclick="addPromoToCart('Combo Familiar')">Aprovechar Oferta</button>
+                    </div>
+                </div>
+                <div class="promo-card animate__animated animate__fadeInUp">
+                    <div class="promo-badge">-15%</div>
+                    <img src="https://img.freepik.com/foto-gratis/receta-vista-superior-platano_23-2151127828.jpg?ga=GA1.1.629016973.1749353182&semt=ais_hybrid&w=740" alt="Promo 2">
+                    <div class="promo-details">
+                        <h3>Postres Saludables</h3>
+                        <p>2 Queques de quinoa + 6 galletas de avena.</p>
+                        <div class="price">
+                            <span class="old-price">S/ 55.00</span>
+                            <span class="new-price">S/ 46.75</span>
+                        </div>
+                        <button class="btn" onclick="addPromoToCart('Postres Saludables')">Aprovechar Oferta</button>
+                    </div>
+                </div>
+                <div class="promo-card animate__animated animate__fadeInRight">
+                    <div class="promo-badge">-30%</div>
+                    <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Promo 3">
+                    <div class="promo-details">
+                        <h3>Fiesta Peruana</h3>
+                        <p>Torta Tres Leches + 12 picarones + 2 litros de chicha morada.</p>
+                        <div class="price">
+                            <span class="old-price">S/ 120.00</span>
+                            <span class="new-price">S/ 84.00</span>
+                        </div>
+                        <button class="btn" onclick="addPromoToCart('Fiesta Peruana')">Aprovechar Oferta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Mismo que en home) -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="https://i.postimg.cc/WpwHTFSN/logo-dulceria.png" alt="Dulce Tentación" width="100">
+                    <p>Postres artesanales con amor y tradición peruana.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Lima, Perú</p>
+                    <p><i class="fas fa-phone"></i> +51 987 654 321</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Dulce Tentación. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function addPromoToCart(promoName) {
+            Swal.fire({
+                title: '¡Oferta Añadida!',
+                html: `<b>${promoName}</b> se ha añadido a tu carrito con descuento.`,
+                icon: 'success',
+                confirmButtonColor: '#d34123',
+                confirmButtonText: 'Ver Carrito'
+            });
+        }
+    </script>
+</body>
+</html>
